@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-import sys
+import os
 
 from flask import Flask
 
-PORT = sys.environ.get('PORT', 5000)
+PORT = os.environ.get('PORT', 5000)
 app = Flask(__name__)
 
 def the_answer():
