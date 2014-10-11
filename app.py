@@ -14,4 +14,4 @@ def index():
     return 'The answer is: {0}'.format(the_answer())
 
 if __name__ == '__main__':
-    app.run(port=PORT, debug=True)
+    app.run(host='0.0.0.0', port=PORT, debug=True)
