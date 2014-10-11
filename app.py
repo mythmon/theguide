@@ -2,7 +2,8 @@
 from flask import Flask
 
 def the_answer():
-    return 42
+    """The question is 'what is six times nine.'"""
+    return 6 * 9
 
 app = Flask(__name__)
 
