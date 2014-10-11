@@ -3,7 +3,7 @@ import os
 
 from flask import Flask
 
-PORT = os.environ.get('PORT', 5000)
+PORT = int(os.environ.get('PORT', 5000))
 app = Flask(__name__)
 
 def the_answer():
